@@ -6,9 +6,9 @@ function updateTime(){
     let hour = time.getHours().toString().padStart(2,0);
     let minute = time.getMinutes().toString().padStart(2,0);
     let second = time.getSeconds().toString().padStart(2,0);
-    let Milliseconds = time.getMilliseconds().toString().padStart(3,0);
-    let Timing = (`${hour}:${minute}:${second}`);
+    let Milliseconds = time.getMilliseconds()
+    let Timing = (`${hour}:${minute}:${second}:${String(Math.floor(Milliseconds/10)).padStart(2,0)}`);
     clock.textContent=Timing;
 }
 updateTime();
-setInterval(updateTime,1);
+setInterval(updateTime,10);
