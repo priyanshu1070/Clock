@@ -3,18 +3,20 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-.clock-container{
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+.clock-container{
+    height: 100%;
+    width: 100%;
 }
 #clock{
     width: 100%;
     text-align: center;
-    font-size: 6rem;
+    font-size: 4rem;
     color: white;
     font-family:monospace;
     backdrop-filter:blur(5px);
